@@ -1,6 +1,13 @@
 const URL_REGEX = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]+\.[a-zA-Z0-9()]+\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/;
 
 const SUCCESS_CODE_201 = 201;
+const SUCCESS_CODE_200 = 200;
+const CODE_ERROR_400 = 400;
+const CODE_ERROR_401 = 401;
+const CODE_ERROR_409 = 409;
+const CODE_ERROR_403 = 403;
+const CODE_ERROR_404 = 404;
+const CODE_ERROR_500 = 500;
 
 const INCORRECT_EMAIL = 'Некорректный email';
 const INCORRECT_AUTH_DATA = 'Неправильные почта или пароль';
@@ -20,6 +27,13 @@ const SERVER_ERROR = 'На сервере произошла ошибка';
 module.exports = {
   URL_REGEX,
   SUCCESS_CODE_201,
+  SUCCESS_CODE_200,
+  CODE_ERROR_400,
+  CODE_ERROR_401,
+  CODE_ERROR_403,
+  CODE_ERROR_404,
+  CODE_ERROR_409,
+  CODE_ERROR_500,
   INCORRECT_EMAIL,
   INCORRECT_AUTH_DATA,
   INCORRECT_URL,

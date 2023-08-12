@@ -1,7 +1,9 @@
+const { CODE_ERROR_400 } = require('../utils/constants');
+
 class BadRequest extends Error {
   constructor(message) {
     super(message);
-    this.statusCode = 400;
+    this.statusCode = CODE_ERROR_400;
   }
 }
 
