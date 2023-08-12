@@ -17,7 +17,7 @@ const app = express();
 mongoose.connect(DB_URL, {
   useNewUrlParser: true,
 });
-const allowedCors = ['https://darimon.nomoreparties.co', 'http://localhost:3000'];
+const allowedCors = ['https://FilmFusion.nomoreparties.co', 'http://localhost:3000'];
 
 const corsOptions = {
   origin: allowedCors,
